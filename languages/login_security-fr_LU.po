@@ -1,0 +1,168 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: login_security\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-28 10:49+0100\n"
+"PO-Revision-Date: 2013-11-28 10:50+0100\n"
+"Last-Translator: Tony <archambeautony@free.fr>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: /home/tony/websites/www-dev/public/wp_plugins/login-"
+"security/plugin_0_0\n"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:8
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:169
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:170
+msgid "Login Security"
+msgstr "Login Security"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:86
+msgid "Attacks during the last 7 days"
+msgstr "Attaques durant les 7 derniers jours"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:96
+msgid "Attacks during the last 12 months"
+msgstr "Attaques durant les 12 derniers mois"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:112
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:359
+msgid "Failed login"
+msgstr "Échec de connexion"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:117
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:278
+msgid "Date"
+msgstr "Date"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:118
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:174
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:280
+msgid "IP"
+msgstr "IP"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:119
+msgid "Login used"
+msgstr "Identifiant utilisé"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:120
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:281
+msgid "User agent"
+msgstr "User Agent"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:121
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:282
+msgid "Referer"
+msgstr "Referer"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:156
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:231
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:317
+msgid "Empty"
+msgstr "Vide"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:169
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:360
+msgid "Failed login by IP"
+msgstr "Échec de connexion par IP"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:175
+msgid "Count"
+msgstr "Total"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:176
+msgid "First date"
+msgstr "Première date"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:177
+msgid "Last date"
+msgstr "Dernière date"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:178
+msgid "Block the IP address"
+msgstr "Bloquer l'adresse IP"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:219
+msgid "Current IP"
+msgstr "IP actuelle"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:260
+msgid "Oups, there is an error"
+msgstr "Oups, il y a une erreur"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:273
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:361
+msgid "Successfull login"
+msgstr "Connexion réussie"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:279
+msgid "User"
+msgstr "Utilisateur"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:340
+msgid "About"
+msgstr "A propos"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:351
+#, php-format
+msgid "Plugin developed by <a href=\"%1$s\">Tony Archambeau</a>."
+msgstr "Plugin developpé par <a href=\"%1$s\">Tony Archambeau</a>."
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/settings.php:355
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:206
+msgid "Donate"
+msgstr "Faire un don"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:205
+msgid "Settings"
+msgstr "Options"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:245
+msgid "Previous"
+msgstr "Précédent"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:246
+msgid "Next"
+msgstr "Suivant"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:250
+#, php-format
+msgid "(%1$s results)"
+msgstr "(%1$s résultats)"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:319
+msgid ""
+"Oups, your IP address was blocked for security reason. Please contact the "
+"administrator if you want that your IP to be unlocked."
+msgstr ""
+"Oups, votre adresse IP a été bloquée pour des raisons de sécurité. Veuillez "
+"contacter l'administrateur si vous souhaitez débloquer votre adresse IP."
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:358
+msgid "Main"
+msgstr "Principal"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:475
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:538
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/login-security.php:544
+msgid "Unknown user"
+msgstr "Utilisateur inconnu"
+
+#: /home/tony/websites/www-dev/public/wp_plugins/login-security/plugin_0_0/functions-ajax.php:43
+msgid "Oups, there is an error to add/remove an IP address from the blacklist."
+msgstr ""
+"Oups, il y a une erreur pour ajouter/supprimer une adresse IP de la "
+"blacklist."
