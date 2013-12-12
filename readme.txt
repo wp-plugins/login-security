@@ -3,7 +3,7 @@ Contributors: funnycat
 Donate link: http://www.infowebmaster.fr/dons.php
 Tags: attack, authentication, ban, banned, blacklist, block, brute, brute force, failed login, force, hack, lock, login, security, spam
 Requires at least: 3.0
-Tested up to: 3.7.1
+Tested up to: 3.8.0
 Stable tag: 1.0.1
 License: GPLv2 or later
 
@@ -30,7 +30,7 @@ On the tested websites there was an average of over 800 login attempts per day.
 *   Multi languages : English, French (from : France, Canada, Belgium, Switzerland and Luxembourg)
 
 
-Want a WordPress developper? Feel free to <a href="http://en.tonyarchambeau.com/contact.html">contact me</a>.
+Want a WordPress developper? Want to add a translation? Feel free to <a href="http://en.tonyarchambeau.com/contact.html">contact me</a>.
 
 
 == Installation ==
@@ -42,6 +42,10 @@ Want a WordPress developper? Feel free to <a href="http://en.tonyarchambeau.com/
 == Frequently Asked Questions ==
 = Will I be protect a 100% against brute-force attack? =
 No, this plugin only offer a way to record every brute-force attack and block the IP address used during these attacks. You still have to follow some rules, such as to be sure your login and password are difficult to find.
+
+
+== Screenshots ==
+1. Graphical user interface that display the number of login attempts during the previous 7 days
 
 
 == Changelog ==
