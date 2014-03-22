@@ -15,10 +15,10 @@ function ls_db_get_log_success( $current_page_number ) {
   
   // set the query
   $sql = "SELECT SQL_CALC_FOUND_ROWS * 
- FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
- WHERE `wla_is_failed` = 0
- ORDER BY `wla_date` DESC
- LIMIT %d, %d";
+    FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
+    WHERE `wla_is_failed` = 0
+    ORDER BY `wla_date` DESC
+    LIMIT %d, %d";
   
   $sql_prepare = $wpdb->prepare(
     $sql,
@@ -46,10 +46,10 @@ function ls_db_get_log_fail( $current_page_number ) {
   
   // set the query
   $sql = "SELECT SQL_CALC_FOUND_ROWS * 
- FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
- WHERE `wla_is_failed` = 1
- ORDER BY `wla_date` DESC
- LIMIT %d, %d";
+    FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
+    WHERE `wla_is_failed` = 1
+    ORDER BY `wla_date` DESC
+    LIMIT %d, %d";
   
   $sql_prepare = $wpdb->prepare(
     $sql,
@@ -77,18 +77,18 @@ function ls_db_get_log_fail_by_ip( $current_page_number ) {
   
   // set the query
   $sql = "SELECT SQL_CALC_FOUND_ROWS 
-   wla_ip, 
-   COUNT(*) AS wla_ip_count, 
-   MIN(wla_date) AS wla_date_min, 
-   MAX(wla_date) AS wla_date_max, 
-   wlab_id
- FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
- LEFT JOIN `" . LS_DB_TABLE_LOGIN_ACCESS_BLACKLIST . "` ON  `wlab_blocked_ip` = `wla_ip` 
-                                                        AND `wlab_is_blocked` = 1
- WHERE `wla_is_failed` = 1
- GROUP BY `wla_ip`
- ORDER BY `wla_ip_count` DESC
- LIMIT %d, %d";
+      wla_ip, 
+      COUNT(*) AS wla_ip_count, 
+      MIN(wla_date) AS wla_date_min, 
+      MAX(wla_date) AS wla_date_max, 
+      wlab_id
+    FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "`
+    LEFT JOIN `" . LS_DB_TABLE_LOGIN_ACCESS_BLACKLIST . "` ON  `wlab_blocked_ip` = `wla_ip` 
+                                                           AND `wlab_is_blocked` = 1
+    WHERE `wla_is_failed` = 1
+    GROUP BY `wla_ip`
+    ORDER BY `wla_ip_count` DESC
+    LIMIT %d, %d";
   
   $sql_prepare = $wpdb->prepare(
     $sql,
@@ -158,10 +158,10 @@ function ls_db_get_log_stats_months_fail( $months_count=12 ) {
   $count_attack_by_day = array();
   
   // query to list the number of attack for the previous 12 months
-  $sql = "SELECT COUNT(*) AS wla_count, DATE_FORMAT( wla_date, '%Y-%m' ) AS wla_month_attacks
+  $sql = "SELECT COUNT(*) AS wla_count, DATE_FORMAT( wla_date, '%%Y-%%m' ) AS wla_month_attacks
     FROM `" . LS_DB_TABLE_LOGIN_ACCESS . "` 
     WHERE `wla_is_failed` = 1
-    AND PERIOD_DIFF( DATE_FORMAT( NOW(), '%Y%m' ), DATE_FORMAT( `wla_date`, '%Y%m' ) ) < %d
+    AND PERIOD_DIFF( DATE_FORMAT( NOW(), '%%Y%%m' ), DATE_FORMAT( `wla_date`, '%%Y%%m' ) ) < %d
     GROUP BY MONTH( `wla_date` ) ";
   
   $sql_prepare = $wpdb->prepare(
@@ -238,9 +238,9 @@ function ls_db_get_block_by_ip( $ip_address='' ) {
   
   // query to see if the IP is on the blacklist
   $sql = "SELECT wlab_id, wlab_blocked_visits
- FROM `" . LS_DB_TABLE_LOGIN_ACCESS_BLACKLIST . "` 
- WHERE wlab_blocked_ip = '%s'
- AND   wlab_is_blocked = 1";
+    FROM `" . LS_DB_TABLE_LOGIN_ACCESS_BLACKLIST . "` 
+    WHERE wlab_blocked_ip = '%s'
+    AND   wlab_is_blocked = 1";
   
   $prepared_query = $wpdb->prepare( $sql, $ip_address );
   

@@ -3,13 +3,12 @@
 Plugin Name: Login Security
 Plugin URI: http://tonyarchambeau.com/
 Description: Improves the security of the login page against brute-force attacks. Records every attempts to login. Easily block an IP address.
-Version: 1.0.1
+Version: 1.0.2
 Author: Tony Archambeau
 Author URI: http://tonyarchambeau.com/
 Text Domain: wp-login-security
 Domain Path: /languages
 
-Copyright 2013 Tony Archambeau
 */
 
 
@@ -37,6 +36,10 @@ if ( !defined('LS_DB_TABLE_LOGIN_ACCESS_BLACKLIST') ) {
 
 if ( !defined('LS_DB_VERSION') ) { define('LS_DB_VERSION', '1.0' ); }
 if ( !defined('LS_NONCE') ) { define( 'LS_NONCE', 'bVAyLuaOQIiV8' ); }
+
+if ( !defined('LS_DONATE_LINK') ) {
+	define('LS_DONATE_LINK', 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FQKK22PPR3EJE&lc=GB&item_name=Login%20Security&item_number=login%2dsecurity&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted');
+}
 
 
 
@@ -203,7 +206,7 @@ function ls_plugin_row_meta( $links, $file ) {
   if ( $file == plugin_basename(__FILE__) ) {
     $settings_page = plugin_basename(__FILE__);
     $links[] = '<a href="options-general.php?page=' . $settings_page .'">' . __('Settings','login_security') . '</a>';
-    $links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FQKK22PPR3EJE&lc=GB&item_name=Login%20Security&item_number=login%2dsecurity&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">'.__('Donate', 'login_security').'</a>';
+    $links[] = '<a href="' . LS_DONATE_LINK . '">'.__('Donate', 'login_security').'</a>';
   }
   return $links;
 }

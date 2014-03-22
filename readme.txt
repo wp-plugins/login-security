@@ -50,6 +50,8 @@ No, this plugin only offer a way to record every brute-force attack and block th
 
 == Changelog ==
 
+= 1.0.2 =
+Debug the graphic of the last 12 months.
 = 1.0.1 =
 Initial Release.
 

@@ -346,10 +346,7 @@ $items = ls_db_get_log_success( $current_page_number );
             $url_author = ( $is_fr===true ? 'http://tonyarchambeau.com/' : 'http://en.tonyarchambeau.com/' );
             ?>
             <p><?php printf(__('Plugin developed by <a href="%1$s">Tony Archambeau</a>.', 'login_security'), $url_author); ?></p>
-            <?php
-            $url_paypal = 'https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FQKK22PPR3EJE&lc=GB&item_name=Login%20Security&item_number=login%2dsecurity&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted';
-            ?>
-            <p><a href="<?php echo $url_paypal; ?>"><?php _e('Donate', 'login_security'); ?></a></p>
+            <p><a href="<?php echo LS_DONATE_LINK; ?>"><?php _e('Donate', 'login_security'); ?></a></p>
           </div>
           </div><!-- .postbox -->
         </div><!-- .meta-box-sortables -->
