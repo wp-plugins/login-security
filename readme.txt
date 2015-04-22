@@ -3,8 +3,8 @@ Contributors: funnycat
 Donate link: http://www.infowebmaster.fr/dons.php
 Tags: attack, authentication, ban, banned, blacklist, block, brute, brute force, failed login, force, hack, lock, login, security, spam
 Requires at least: 3.0
-Tested up to: 4.1.0
-Stable tag: 1.0.1
+Tested up to: 4.2.0
+Stable tag: 1.0.2
 License: GPLv2 or later
 
 
